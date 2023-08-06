@@ -23,7 +23,7 @@ public class Graphical {
 	//Produces the degrees for each vertex of the Graph
 	public static ArrayList<Integer> degreeProducer(int vertices) {
 		// need to store the vertex degree into a list
-	    ArrayList<Integer> degree = new ArrayList<Integer>(); // Store the degrees in an Arraylist
+	    	ArrayList<Integer> degree = new ArrayList<Integer>(); // Store the degrees in an Arraylist
 
 		int min = 0;
 		int max = vertices-1;
@@ -82,14 +82,14 @@ public class Graphical {
 			// 4th condition
 			// Sort the sequence using two for loops    
 			int temp;
-	        for (Integer a: degreeArray){     
-	          	for (Integer b: degreeArray){     
-	              	if(a < b) {  //swap elements if not in order
-	                 	temp = a;  
-	                 	a = b;    
-	                 	b = temp;    
-	               	}     
-	            }     
+	        	for (Integer a: degreeArray){     
+	          		for (Integer b: degreeArray){     
+	              			if(a < b) {  //swap elements if not in order
+	                 		temp = a;  
+	                 		a = b;    
+	                 		b = temp;    
+	               		}     
+	            	}     
 	        }    
 	        
 	        // 5th condition
