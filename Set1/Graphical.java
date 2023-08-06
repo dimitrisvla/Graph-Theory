@@ -108,22 +108,22 @@ public class Graphical {
 	public static int [][] graphProduced(int vertices, ArrayList<Integer> degreeArray2) {	
 		int[][]graph2dArray = new int [vertices][vertices];
 		
-        for (int i = 0; i < vertices; i++) {
-            int degree = degreeArray2.get(i);
-            for (int j = i + 1; j <= i + degree; j++) {
-            	graph2dArray[i][j] = 1;
-            	graph2dArray[j][i] = 1;
-            }
-        }
+	        for (int i = 0; i < vertices; i++) {
+	            int degree = degreeArray2.get(i);
+	            for (int j = i + 1; j <= i + degree; j++) {
+	            	graph2dArray[i][j] = 1;
+	            	graph2dArray[j][i] = 1;
+	            }
+	        }
           
-        //Print the result
-        for (int i = 0; i < vertices; i++) {
-            for (int j = 0; j < vertices; j++) {
-                System.out.print(graph2dArray[i][j] + " ");
-            }
-            System.out.println();
-        }
-        return graph2dArray; // return if needed
+	        //Print the result
+	        for (int i = 0; i < vertices; i++) {
+	            for (int j = 0; j < vertices; j++) {
+	                System.out.print(graph2dArray[i][j] + " ");
+	            }
+	            System.out.println();
+	        }
+        	return graph2dArray; // return if needed
 	}
 
 
